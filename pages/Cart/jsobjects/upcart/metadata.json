@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "67c11cd3cacf5e4d5a376428_723b058a-56a9-4a56-87f4-4da2ed02f7f7",
+  "id": "Cart_upcart",
+  "unpublishedCollection": {
+    "name": "upcart",
+    "pageId": "Cart",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

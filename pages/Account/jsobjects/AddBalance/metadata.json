@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "67c11cd3cacf5e4d5a376428_616ed33d-a02c-4368-ac68-925a61ee8ba6",
+  "id": "Account_AddBalance",
+  "unpublishedCollection": {
+    "name": "AddBalance",
+    "pageId": "Account",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

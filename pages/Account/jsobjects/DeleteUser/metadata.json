@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "67c11cd3cacf5e4d5a376428_5ac70b7b-dfc2-4eb6-9310-90bfeeca2269",
+  "id": "Account_DeleteUser",
+  "unpublishedCollection": {
+    "name": "DeleteUser",
+    "pageId": "Account",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

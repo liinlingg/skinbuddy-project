@@ -1,0 +1,52 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 35,
+  "dynamicBindingPathList": [
+    {
+      "key": "truncateButtonColor"
+    },
+    {
+      "key": "fontFamily"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "1rem",
+  "fontStyle": "",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "jykdy0lnxb",
+  "leftColumn": 13,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 40,
+  "mobileLeftColumn": 12,
+  "mobileRightColumn": 28,
+  "mobileTopRow": 36,
+  "needsErrorInfo": false,
+  "originalBottomRow": 35,
+  "originalTopRow": 24,
+  "overflow": "NONE",
+  "parentColumnSpace": 17.9375,
+  "parentId": "vw2q8q5nqn",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 52,
+  "shouldTruncate": false,
+  "text": "คุณประโยชน์ : คุณสมบัติหลักในการลดเลือนจุดด่างดำ ลดความเข้มข้นของเม็ดสี ลดความหมองคล้ำ และรอยแดงที่เกิดจากการระคายเคืองได้\n\nส่วนประกอบหลัก : CL302 Brightenin Complex, UP305, VitaminC, Salysilic acid, glucosamine, yeast extract",
+  "textAlign": "LEFT",
+  "textColor": "#231F20",
+  "topRow": 24,
+  "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "num52ycxti",
+  "widgetName": "Text2"
+}

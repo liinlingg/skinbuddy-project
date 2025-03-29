@@ -1,0 +1,41 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 24,
+  "boxShadow": "none",
+  "defaultImage": "https://assets.appsmith.com/widgets/default.png",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "enableDownload": false,
+  "enableRotation": false,
+  "flexVerticalAlignment": "start",
+  "image": "https://m.clinique.co.th/media/export/cms/products/1200x1500/cl_sku_V3TC01_1200x1500_0.png",
+  "imageShape": "RECTANGLE",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "xn1jod93fa",
+  "leftColumn": 26,
+  "maxZoomLevel": 2,
+  "mobileBottomRow": 27,
+  "mobileLeftColumn": 29,
+  "mobileRightColumn": 41,
+  "mobileTopRow": 15,
+  "needsErrorInfo": false,
+  "objectFit": "cover",
+  "originalBottomRow": 32,
+  "originalTopRow": 7,
+  "parentColumnSpace": 17.9375,
+  "parentId": "vw2q8q5nqn",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 37,
+  "topRow": 5,
+  "type": "IMAGE_WIDGET",
+  "version": 1,
+  "widgetId": "e382xlukbp",
+  "widgetName": "Image1"
+}

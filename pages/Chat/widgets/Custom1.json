@@ -1,0 +1,68 @@
+{
+  "backgroundColor": "#FFFFFF",
+  "borderColor": "#E0DEDE",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 46,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "copy": "{{copyToClipboard(Custom1.model.copyText);}}",
+  "defaultModel": "{{\n\n{\n\tchatHistory: JSObject1.chatHistory\n}\n\n}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "theme"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "defaultModel"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "copy"
+    }
+  ],
+  "events": [
+    "copy"
+  ],
+  "isCanvas": false,
+  "isLoading": false,
+  "isSearchWildcard": true,
+  "isVisible": true,
+  "key": "qxr7otlzqv",
+  "leftColumn": 18,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "mobileBottomRow": 36,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 11,
+  "mobileTopRow": 6,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 17.9375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "rightColumn": 37,
+  "srcDoc": {
+    "css": "body {\n  font-family: sans-serif;\n  background-color: var(--appsmith-theme-backgroundColor);\n  color: var(--appsmith-theme-primaryColor);\n  size: 16px;\n}\n\n.chat-widget {\n  display: flex;\n  flex-direction: column;\n  height: 100%;\n  background-color: #2e2e2e;\n}\n\n.messages-container {\n  flex: 1;\n  position: absolute;\n  top: 0;\n  overflow-y: auto;\n  padding: 16px;\n  width: 95%;\n  height: 100%;\n}\n\n.message {\n  margin: 4px 12px;\n  border: solid 1px grey;\n  border-radius: 4px;\n  padding: 4px 12px;\n}\n\n.user-message {\n  color: black;\n}",
+    "html": "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css\">\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js\"></script>\n\n<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css\">\n<!-- Chat widget container -->\n<div class=\"chat-widget\" id=\"chat-widget\">\n <div class=\"messages-container\" id=\"messages-container\">\n   <!-- Messages will be dynamically inserted here -->\n </div>\n</div>",
+    "js": "import { marked } from 'https://cdn.jsdelivr.net/npm/marked@14.1.1/+esm';\nconst messagesContainer = document.getElementById('messages-container');\nfunction renderMessage(message, isUser) {\n  const messageElement = document.createElement('div');\n  messageElement.className = 'message ' + (isUser ? 'user-message' : '');\n  messageElement.innerHTML = marked(message || '', {\n    highlight: function (code, language) {\n      const validLanguage = hljs.getLanguage(language) ? language : 'plaintext';\n      return hljs.highlight(validLanguage, code).value; // Syntax highlighting using highlight.js\n    }\n  });\n  if (!isUser) {\n    const icon = addCopyIcon(message);\n    messageElement.style.position = 'relative';\n    messageElement.appendChild(icon);\n  }\n  messageElement.querySelectorAll('pre code').forEach(block => {\n    hljs.highlightElement(block);\n  });\n  messagesContainer.appendChild(messageElement);\n}\n\n// Function to handle the copy event by saving to appsmith.model\nfunction handleCopy(text) {\n  appsmith.updateModel({\n    copyText: text\n  });\n  appsmith.triggerEvent('copy');\n}\nfunction addCopyIcon(message) {\n  const copyIcon = document.createElement('i');\n  copyIcon.className = 'fas fa-copy copy-icon';\n  copyIcon.style.cursor = 'pointer';\n  copyIcon.style.position = 'absolute';\n  copyIcon.style.bottom = '5px';\n  copyIcon.style.right = '5px';\n  copyIcon.addEventListener('click', () => {\n    handleCopy(message);\n  });\n  return copyIcon;\n}\nfunction updateMessages() {\n  const chatHistory = appsmith.model.chatHistory || [];\n  if (!chatHistory[0]?.message) {\n    return;\n  }\n  messagesContainer.innerHTML = '';\n  chatHistory.forEach(msg => renderMessage(msg.message, msg.role === 'USER'));\n}\nappsmith.onReady(() => {\n  appsmith.onModelChange(() => {\n    updateMessages();\n  });\n});"
+  },
+  "theme": "{{appsmith.theme}}",
+  "topRow": 13,
+  "type": "CUSTOM_WIDGET",
+  "uncompiledSrcDoc": {
+    "css": "body{\n\tfont-family: sans-serif;\n\tbackground-color: var(--appsmith-theme-backgroundColor);\n\tcolor: var(--appsmith-theme-primaryColor);\n\tsize: 16px\n}\n  .chat-widget {\n    display: flex;\n    flex-direction: column;\n    height: 100%;\n\t\tbackground-color: #2e2e2e\n  }\n\n  .messages-container {\n    flex: 1;\n\t\tposition: absolute;\n    top: 0;\n    overflow-y: auto;\n    padding: 16px;\n\t\twidth: 95%;\n\t\theight: 100%\n  }\n\n.message {\n\tmargin: 4px 12px;\n\tborder: solid 1px grey;\n\tborder-radius: 4px;\n\tpadding: 4px 12px\n}\n\n.user-message {\n\tcolor: black\n}\n",
+    "html": "<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css\">\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js\"></script>\n\n<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css\">\n<!-- Chat widget container -->\n<div class=\"chat-widget\" id=\"chat-widget\">\n <div class=\"messages-container\" id=\"messages-container\">\n   <!-- Messages will be dynamically inserted here -->\n </div>\n</div>",
+    "js": "import {marked} from 'https://cdn.jsdelivr.net/npm/marked@14.1.1/+esm';\n\nconst messagesContainer = document.getElementById('messages-container');\n\nfunction renderMessage(message, isUser) {\n\tconst messageElement = document.createElement('div');\n\tmessageElement.className = 'message ' + (isUser ? 'user-message' : '');\n\n\tmessageElement.innerHTML = marked(message || '', {\n\t\thighlight: function(code, language) {\n\t\t\tconst validLanguage = hljs.getLanguage(language) ? language : 'plaintext';\n\t\t\treturn hljs.highlight(validLanguage, code).value;  // Syntax highlighting using highlight.js\n\t\t}\n\t});\n\n\tif(!isUser){\n\t\tconst icon = addCopyIcon(message);\n\t\tmessageElement.style.position = 'relative';\n\t\tmessageElement.appendChild(icon);\n\t}\n\tmessageElement.querySelectorAll('pre code').forEach((block) => {\n\t\t\thljs.highlightElement(block);\n\t\t});\n\tmessagesContainer.appendChild(messageElement)\n}\n\n// Function to handle the copy event by saving to appsmith.model\nfunction handleCopy(text) {\n\tappsmith.updateModel({copyText: text});  \n\tappsmith.triggerEvent('copy');   \n}\n\nfunction addCopyIcon(message){\n    const copyIcon = document.createElement('i');\n    copyIcon.className = 'fas fa-copy copy-icon';\n    copyIcon.style.cursor = 'pointer';\n    copyIcon.style.position = 'absolute';\n    copyIcon.style.bottom = '5px';\n    copyIcon.style.right = '5px';\n    copyIcon.addEventListener('click', () => {\n        handleCopy(message);  \n    });\n    return copyIcon;\n}\n\n\nfunction updateMessages(){\n\t\tconst chatHistory = appsmith.model.chatHistory || [];\n\t\tif (!chatHistory[0]?.message) { return; }\n\t\tmessagesContainer.innerHTML = '';\n\t\tchatHistory.forEach(msg => renderMessage(msg.message, msg.role === 'USER'));\n\t}\n\nappsmith.onReady(() => {\n\n\tappsmith.onModelChange(() => {\n\t\tupdateMessages()\n\t});\n\n});\n"
+  },
+  "version": 1,
+  "widgetId": "m8b5xdk1af",
+  "widgetName": "Custom1"
+}

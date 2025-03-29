@@ -1,0 +1,52 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 44,
+  "dynamicBindingPathList": [
+    {
+      "key": "truncateButtonColor"
+    },
+    {
+      "key": "fontFamily"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "1rem",
+  "fontStyle": "",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "jykdy0lnxb",
+  "leftColumn": 14,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 40,
+  "mobileLeftColumn": 12,
+  "mobileRightColumn": 28,
+  "mobileTopRow": 36,
+  "needsErrorInfo": false,
+  "originalBottomRow": 46,
+  "originalTopRow": 31,
+  "overflow": "NONE",
+  "parentColumnSpace": 17.9375,
+  "parentId": "meeakrcx17",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 53,
+  "shouldTruncate": false,
+  "text": "คุณสมบัติ :  สูตรอ่อนโยน สำหรับผิวแพ้ง่ายและเป็นสิวง่าย ช่วยลดความมันและขจัดสิ่งสกปรกได้อย่างอ่อนโยน ให้ผิวสะอาดหมดจดโดยไม่ทำให้ผิวแห้งตึง ปราศจากสบู่ น้ำหอมและมีค่า pH ที่สมดุล\n\nส่วนประกอบสำคัญ : ,  Sulfosuccinate, Sodium Lauroyl Sarcosinate, Glycerin, Cocamidopropyl Betaine, Glycol Distearate",
+  "textAlign": "LEFT",
+  "textColor": "#231F20",
+  "topRow": 31,
+  "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "fdbbg8r22b",
+  "widgetName": "Text2CopyCopy1"
+}

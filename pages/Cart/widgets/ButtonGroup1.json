@@ -1,0 +1,183 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 8,
+  "boxShadow": "none",
+  "buttonVariant": "PRIMARY",
+  "childStylesheet": {
+    "button": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "groupButtons.groupButton2.menuItems.menuItemysk0wb14wo.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton2.menuItems.menuItemrxlhsnju7i.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton1.buttonColor"
+    }
+  ],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "groupButtons.groupButton2.menuItems.menuItemrxlhsnju7i.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton2.menuItems.menuItemysk0wb14wo.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton2.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonq9eeqyc71p.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton1p9e2jolup.onClick"
+    },
+    {
+      "key": "groupButtons.groupButtonda3odk672n.onClick"
+    },
+    {
+      "key": "groupButtons.groupButton1.onClick"
+    }
+  ],
+  "groupButtons": {
+    "groupButton1": {
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "buttonType": "SIMPLE",
+      "disabledWhenInvalid": false,
+      "iconName": "shopping-cart",
+      "id": "groupButton1",
+      "index": 2,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "My cart",
+      "menuItems": {},
+      "onClick": "{{navigateTo('Cart', {}, 'SAME_WINDOW');}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButton1p9e2jolup": {
+      "buttonColor": "#a6e9ef",
+      "buttonType": "SIMPLE",
+      "iconName": "calendar",
+      "id": "groupButton1p9e2jolup",
+      "index": 3,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Booking",
+      "menuItems": {},
+      "onClick": "{{navigateTo('Booking', {}, 'SAME_WINDOW');}}",
+      "placement": "CENTER",
+      "variant": "filled",
+      "widgetId": "qb5pwgaq5r"
+    },
+    "groupButton2": {
+      "buttonColor": "#a6e9ef",
+      "buttonType": "SIMPLE",
+      "disabledWhenInvalid": false,
+      "iconName": "shop",
+      "id": "groupButton2",
+      "index": 1,
+      "isDisabled": false,
+      "isVisible": true,
+      "label": "Shopping",
+      "menuItems": {
+        "menuItemn6relg6jog": {
+          "id": "menuItemn6relg6jog",
+          "index": 0,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "คัดกรองสินค้า",
+          "widgetId": "7j46exvied"
+        },
+        "menuItemrxlhsnju7i": {
+          "id": "menuItemrxlhsnju7i",
+          "index": 2,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "แชท",
+          "onClick": "{{navigateTo('Chat', {}, 'SAME_WINDOW');}}",
+          "widgetId": "o6pcdx1ftp"
+        },
+        "menuItemysk0wb14wo": {
+          "id": "menuItemysk0wb14wo",
+          "index": 1,
+          "isDisabled": false,
+          "isVisible": true,
+          "label": "สินค้า",
+          "onClick": "{{navigateTo('สินค้า', {}, 'SAME_WINDOW');}}",
+          "widgetId": "81d11w1cyz"
+        }
+      },
+      "onClick": "{{navigateTo('หน้าคัดสินค้า', {}, 'SAME_WINDOW');}}",
+      "placement": "CENTER",
+      "widgetId": ""
+    },
+    "groupButtonda3odk672n": {
+      "buttonColor": "#a6e9ef",
+      "buttonType": "SIMPLE",
+      "iconName": "home",
+      "id": "groupButtonda3odk672n",
+      "index": 0,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Home",
+      "menuItems": {},
+      "onClick": "{{navigateTo('Home', {}, 'SAME_WINDOW');}}",
+      "placement": "CENTER",
+      "variant": "filled",
+      "widgetId": "32s7r5l1h9"
+    },
+    "groupButtonq9eeqyc71p": {
+      "buttonColor": "#a6e9ef",
+      "buttonType": "SIMPLE",
+      "iconName": "chat",
+      "id": "groupButtonq9eeqyc71p",
+      "index": 4,
+      "isDisabled": false,
+      "isSeparator": false,
+      "isVisible": true,
+      "itemType": "BUTTON",
+      "label": "Chat",
+      "menuItems": {},
+      "onClick": "{{navigateTo('Chat', {}, 'SAME_WINDOW');}}",
+      "placement": "CENTER",
+      "variant": "filled",
+      "widgetId": "x22tbsqjyd"
+    }
+  },
+  "isCanvas": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "cs4r7ncalz",
+  "leftColumn": 16,
+  "minWidth": 450,
+  "mobileBottomRow": 19,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 15,
+  "mobileTopRow": 15,
+  "needsErrorInfo": false,
+  "orientation": "horizontal",
+  "parentColumnSpace": 17.9375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 49,
+  "topRow": 4,
+  "type": "BUTTON_GROUP_WIDGET",
+  "version": 1,
+  "widgetId": "0bv048gr4t",
+  "widgetName": "ButtonGroup1"
+}

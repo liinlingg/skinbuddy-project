@@ -1,0 +1,16 @@
+{
+  "gitSyncId": "67c11cd3cacf5e4d5a376428_3761676d-c998-4017-8049-51a4b108250a",
+  "id": "Chat_JSObject1",
+  "unpublishedCollection": {
+    "name": "JSObject1",
+    "pageId": "Chat",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "chatHistory",
+        "value": "[{\n  role: \"CHATBOT\",\n  message: \"How can I help you today?\"\n}]"
+      }
+    ]
+  }
+}

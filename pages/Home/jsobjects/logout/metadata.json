@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "67c11cd3cacf5e4d5a376428_05b4cf30-bcb4-4459-9fd0-b30c03949e88",
+  "id": "Home_logout",
+  "unpublishedCollection": {
+    "name": "logout",
+    "pageId": "Home",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

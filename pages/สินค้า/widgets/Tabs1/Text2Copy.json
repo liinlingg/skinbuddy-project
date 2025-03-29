@@ -1,0 +1,52 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 40,
+  "dynamicBindingPathList": [
+    {
+      "key": "truncateButtonColor"
+    },
+    {
+      "key": "fontFamily"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "1rem",
+  "fontStyle": "",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "jykdy0lnxb",
+  "leftColumn": 14,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 40,
+  "mobileLeftColumn": 12,
+  "mobileRightColumn": 28,
+  "mobileTopRow": 36,
+  "needsErrorInfo": false,
+  "originalBottomRow": 40,
+  "originalTopRow": 29,
+  "overflow": "NONE",
+  "parentColumnSpace": 17.9375,
+  "parentId": "obhhhvu5r6",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 53,
+  "shouldTruncate": false,
+  "text": "คุณสมบัติ : ป้องกันการเกิดปัญหาจุดด่างดำและเผยผิวดูกระจ่างใสที่ดีที่สุด สัมผัสความเปลี่ยนแปลงได้ตั้งแต่ 7 วันแรกที่ใช้ ผ่านการทดสอบโดยผู้เชี่ยวชาญด้านผิวพรรณ\n\nส่วนประกอบสำคัญ : Melasyl, Niacinamide, Carnosine",
+  "textAlign": "LEFT",
+  "textColor": "#231F20",
+  "topRow": 29,
+  "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "sq8rw13lfc",
+  "widgetName": "Text2Copy"
+}

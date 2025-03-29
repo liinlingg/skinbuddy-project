@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "67c11cd3cacf5e4d5a376428_11d9f64f-1877-43d0-ad77-7cd1828d9577",
+  "id": "Booking_reset",
+  "unpublishedCollection": {
+    "name": "reset",
+    "pageId": "Booking",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 5,
+  "bottomRowBeforeCollapse": 5,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "TERTIARY",
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconName": "log-in",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": "{{ !appsmith.store.user }}",
+  "key": "sgvrm06kx4",
+  "leftColumn": 60,
+  "minWidth": 50,
+  "mobileBottomRow": 50,
+  "mobileLeftColumn": 12,
+  "mobileRightColumn": 16,
+  "mobileTopRow": 46,
+  "needsErrorInfo": false,
+  "onClick": "{{navigateTo('LoginPage', {}, 'SAME_WINDOW');}}",
+  "originalBottomRow": 5,
+  "originalTopRow": 1,
+  "parentColumnSpace": 19.8125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "hug",
+  "rightColumn": 62,
+  "tooltip": "",
+  "topRow": 1,
+  "topRowBeforeCollapse": 1,
+  "type": "ICON_BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "g6q3qwsraj",
+  "widgetName": "IconButton1"
+}

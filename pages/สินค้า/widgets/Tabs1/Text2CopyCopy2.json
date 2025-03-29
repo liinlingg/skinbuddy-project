@@ -1,0 +1,52 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 40,
+  "dynamicBindingPathList": [
+    {
+      "key": "truncateButtonColor"
+    },
+    {
+      "key": "fontFamily"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicHeight": "AUTO_HEIGHT",
+  "dynamicTriggerPathList": [],
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "1rem",
+  "fontStyle": "",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "jykdy0lnxb",
+  "leftColumn": 15,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 40,
+  "mobileLeftColumn": 12,
+  "mobileRightColumn": 28,
+  "mobileTopRow": 36,
+  "needsErrorInfo": false,
+  "originalBottomRow": 40,
+  "originalTopRow": 29,
+  "overflow": "NONE",
+  "parentColumnSpace": 17.9375,
+  "parentId": "ogw40ymuxx",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 55,
+  "shouldTruncate": false,
+  "text": "คุณสมบัติ : มอยส์เจอไรเซอร์บำรุงผิว ช่วยลดปัญหาสิว, ลดเลือนรอยสิว, ลดสิวเกิดซ้ำแม้หลังหยุดใช้ 1 สัปดาห์\n\nส่วนประกอบสำคัญ : PHYLOBIOMA, AOUA POSAEFILIFORMIS (APF), LHA, ZINC PCA, NIACINAMIDE, PROCERAD ",
+  "textAlign": "LEFT",
+  "textColor": "#231F20",
+  "topRow": 29,
+  "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "i46rz71fn5",
+  "widgetName": "Text2CopyCopy2"
+}

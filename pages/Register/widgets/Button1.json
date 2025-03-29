@@ -1,0 +1,60 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 75,
+  "boxShadow": "none",
+  "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "isDefaultClickDisabled": true,
+  "isDisabled": "{{ \n  !username.text ||          // Email\n  !password.text ||          // Username \n  !email.text ||          // Password\n  !confirm_password.text ||          // Re-type password\n  Number(age) ||\n  !address.text    // Address\n}}",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "obud2f496b",
+  "leftColumn": 24,
+  "minWidth": 120,
+  "mobileBottomRow": 87,
+  "mobileLeftColumn": 9,
+  "mobileRightColumn": 25,
+  "mobileTopRow": 83,
+  "needsErrorInfo": false,
+  "onClick": "{{create_user1.run().then(() => {\n  eclairtest.runQueries();\n});}}",
+  "originalBottomRow": 75,
+  "originalTopRow": 71,
+  "parentColumnSpace": 17.9375,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "renderMode": "CANVAS",
+  "resetFormOnClick": false,
+  "responsiveBehavior": "hug",
+  "rightColumn": 40,
+  "text": "Register",
+  "topRow": 71,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "y747327qcp",
+  "widgetName": "Button1"
+}
